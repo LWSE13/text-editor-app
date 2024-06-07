@@ -27,6 +27,8 @@ module.exports = () => {
         swDest: 'src-sw.js',  
       }),
       new WebpackPwaManifest({
+        inject: true,
+        fingerprints: false,
         name: 'J.A.T.E',
         short_name: 'J.A.T.E',
         description: 'Just Another Text Editor',
